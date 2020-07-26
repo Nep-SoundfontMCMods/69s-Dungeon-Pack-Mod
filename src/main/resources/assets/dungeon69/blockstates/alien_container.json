@@ -1,0 +1,45 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "dungeon69:alien_container.obj",
+    "custom": {
+      "flip-v": true
+    },
+    "textures": {
+      "#1": "dungeon69:blocks/"
+    }
+  },
+  "variants": {
+    "normal": {
+      "model": "dungeon69:alien_container.obj"
+    },
+    "facing=north": {
+      "model": "dungeon69:alien_container.obj"
+    },
+    "facing=east": {
+      "model": "dungeon69:alien_container.obj",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "dungeon69:alien_container.obj",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dungeon69:alien_container.obj",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "dungeon69:alien_container.obj",
+      "x": 90
+    },
+    "facing=down": {
+      "model": "dungeon69:alien_container.obj",
+      "x": 270
+    },
+    "inventory": [
+      {
+        "transform": "forge:default-item"
+      }
+    ]
+  }
+}

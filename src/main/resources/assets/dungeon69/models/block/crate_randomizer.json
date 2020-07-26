@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dungeon69:blocks/rand",
+    "up": "dungeon69:blocks/rand",
+    "north": "dungeon69:blocks/rand",
+    "east": "dungeon69:blocks/rand",
+    "south": "dungeon69:blocks/rand",
+    "west": "dungeon69:blocks/rand",
+    "particle": "dungeon69:blocks/rand"
+  }
+}

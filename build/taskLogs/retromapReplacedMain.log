@@ -1,0 +1,921 @@
+Processing 15 files
+Start Processing: soundfont/nep/dungeonsixnine/ClientProxyDungeon69Mod.java
+Import: net.minecraftforge.fml.common.event.FMLServerStartingEvent
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLInitializationEvent
+Import: net.minecraftforge.client.model.obj.OBJLoader
+End  Processing: soundfont/nep/dungeonsixnine/ClientProxyDungeon69Mod.java
+
+Start Processing: soundfont/nep/dungeonsixnine/Dungeon69Mod.java
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class net/minecraftforge/fml/common/Mod
+New Key: class net/minecraftforge/event/RegistryEvent
+New Key: class net/minecraftforge/event/RegistryEvent
+New Key: class net/minecraftforge/event/RegistryEvent
+New Key: class net/minecraftforge/event/RegistryEvent
+New Key: class net/minecraftforge/event/RegistryEvent
+New Key: class net/minecraftforge/event/RegistryEvent
+Import: net.minecraftforge.fml.relauncher.SideOnly
+Import: net.minecraftforge.fml.relauncher.Side
+Import: net.minecraftforge.fml.common.registry.GameRegistry
+Import: net.minecraftforge.fml.common.registry.EntityEntry
+Import: net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper
+Import: net.minecraftforge.fml.common.network.NetworkRegistry
+Import: net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+Import: net.minecraftforge.fml.common.event.FMLServerStartingEvent
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLInitializationEvent
+Import: net.minecraftforge.fml.common.SidedProxy
+Import: net.minecraftforge.fml.common.Mod
+Import: net.minecraftforge.fluids.FluidRegistry
+Import: net.minecraftforge.event.RegistryEvent
+Import: net.minecraftforge.common.MinecraftForge
+Import: net.minecraftforge.client.event.ModelRegistryEvent
+Adding 5 imports
+        java.util.function.Supplier
+        net.minecraft.block.Block
+        net.minecraft.item.Item
+        net.minecraft.potion.Potion
+        net.minecraft.world.biome.Biome
+End  Processing: soundfont/nep/dungeonsixnine/Dungeon69Mod.java
+
+Start Processing: soundfont/nep/dungeonsixnine/Dungeon69ModVariables.java
+FOUND CONSTR method soundfont/nep/dungeonsixnine/Dungeon69ModVariables/MapVariables/MapVariables ()V soundfont/nep/dungeonsixnine/Dungeon69ModVariables/MapVariables
+FOUND CONSTR method soundfont/nep/dungeonsixnine/Dungeon69ModVariables/MapVariables/MapVariables (Ljava/lang/String;)V soundfont/nep/dungeonsixnine/Dungeon69ModVariables/MapVariables
+Rename method net/minecraft/world/storage/WorldSavedData/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[836,847]::readFromNBT->func_76184_a
+Rename method net/minecraft/world/storage/WorldSavedData/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[916,926]::writeToNBT->func_189551_b
+Rename method net/minecraft/world/storage/WorldSavedData/markDirty ()V[1023,1032]::markDirty->func_76185_a
+Rename field net/minecraft/world/World/isRemote[1053,1061]::isRemote->field_72995_K
+Rename method net/minecraft/world/World/getMapStorage ()Lnet/minecraft/world/storage/MapStorage;[1365,1378]::getMapStorage->func_175693_T
+Rename method net/minecraft/world/storage/MapStorage/getOrLoadData (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/world/storage/WorldSavedData;[1381,1394]::getOrLoadData->func_75742_a
+Rename method net/minecraft/world/World/getMapStorage ()Lnet/minecraft/world/storage/MapStorage;[1501,1514]::getMapStorage->func_175693_T
+Rename method net/minecraft/world/storage/MapStorage/setData (Ljava/lang/String;Lnet/minecraft/world/storage/WorldSavedData;)V[1517,1524]::setData->func_75745_a
+FOUND CONSTR method soundfont/nep/dungeonsixnine/Dungeon69ModVariables/WorldVariables/WorldVariables ()V soundfont/nep/dungeonsixnine/Dungeon69ModVariables/WorldVariables
+FOUND CONSTR method soundfont/nep/dungeonsixnine/Dungeon69ModVariables/WorldVariables/WorldVariables (Ljava/lang/String;)V soundfont/nep/dungeonsixnine/Dungeon69ModVariables/WorldVariables
+Rename method net/minecraft/world/storage/WorldSavedData/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[1861,1872]::readFromNBT->func_76184_a
+Rename method net/minecraft/world/storage/WorldSavedData/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[1941,1951]::writeToNBT->func_189551_b
+Rename method net/minecraft/world/storage/WorldSavedData/markDirty ()V[2048,2057]::markDirty->func_76185_a
+Rename field net/minecraft/world/World/isRemote[2078,2086]::isRemote->field_72995_K
+Rename field net/minecraft/world/World/provider[2290,2298]::provider->field_73011_w
+Rename method net/minecraft/world/storage/MapStorage/getOrLoadData (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/world/storage/WorldSavedData;[2459,2472]::getOrLoadData->func_75742_a
+Rename method net/minecraft/world/storage/MapStorage/setData (Ljava/lang/String;Lnet/minecraft/world/storage/WorldSavedData;)V[2604,2611]::setData->func_75745_a
+Rename field net/minecraft/network/NetHandlerPlayServer/player[2970,2976]::player->field_147369_b
+Rename method net/minecraft/entity/player/EntityPlayerMP/getServerWorld ()Lnet/minecraft/world/WorldServer;[2985,2999]::getServerWorld->func_71121_q
+Rename method net/minecraft/util/IThreadListener/addScheduledTask (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;[3008,3024]::addScheduledTask->func_152344_a
+Rename field net/minecraft/network/NetHandlerPlayServer/player[3082,3088]::player->field_147369_b
+Rename field net/minecraft/entity/Entity/world[3097,3102]::world->field_70170_p
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3138,3150]::getMinecraft->func_71410_x
+Rename method net/minecraft/util/IThreadListener/addScheduledTask (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;[3153,3169]::addScheduledTask->func_152344_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3210,3222]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/player[3225,3231]::player->field_71439_g
+Rename field net/minecraft/entity/Entity/world[3239,3244]::world->field_70170_p
+Rename method net/minecraft/world/storage/WorldSavedData/markDirty ()V[3436,3445]::markDirty->func_76185_a
+Rename field net/minecraft/world/World/provider[3609,3617]::provider->field_73011_w
+Rename method net/minecraft/world/World/getMapStorage ()Lnet/minecraft/world/storage/MapStorage;[3686,3699]::getMapStorage->func_175693_T
+Rename method net/minecraft/world/storage/MapStorage/setData (Ljava/lang/String;Lnet/minecraft/world/storage/WorldSavedData;)V[3702,3709]::setData->func_75745_a
+Rename method net/minecraft/world/storage/MapStorage/setData (Ljava/lang/String;Lnet/minecraft/world/storage/WorldSavedData;)V[3799,3806]::setData->func_75745_a
+FOUND CONSTR method soundfont/nep/dungeonsixnine/Dungeon69ModVariables/WorldSavedDataSyncMessage/WorldSavedDataSyncMessage ()V soundfont/nep/dungeonsixnine/Dungeon69ModVariables/WorldSavedDataSyncMessage
+FOUND CONSTR method soundfont/nep/dungeonsixnine/Dungeon69ModVariables/WorldSavedDataSyncMessage/WorldSavedDataSyncMessage (ILnet/minecraft/world/storage/WorldSavedData;)V soundfont/nep/dungeonsixnine/Dungeon69ModVariables/WorldSavedDataSyncMessage
+Rename method net/minecraft/world/storage/WorldSavedData/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[4295,4305]::writeToNBT->func_189551_b
+Rename method net/minecraft/world/storage/WorldSavedData/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[4563,4574]::readFromNBT->func_76184_a
+Import: net.minecraftforge.fml.relauncher.Side
+Import: net.minecraftforge.fml.common.network.simpleimpl.MessageContext
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessage
+Import: net.minecraftforge.fml.common.network.ByteBufUtils
+Adding 4 imports
+        net.minecraft.client.Minecraft
+        net.minecraft.nbt.NBTTagCompound
+        net.minecraft.world.World
+        net.minecraft.world.storage.WorldSavedData
+End  Processing: soundfont/nep/dungeonsixnine/Dungeon69ModVariables.java
+
+Start Processing: soundfont/nep/dungeonsixnine/ElementsDungeon69Mod.java
+FOUND CONSTR method soundfont/nep/dungeonsixnine/ElementsDungeon69Mod/ElementsDungeon69Mod ()V soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class net/minecraftforge/fml/common/discovery/ASMDataTable
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod/ModElement
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/Dungeon69ModVariables
+New Key: class soundfont/nep/dungeonsixnine/Dungeon69ModVariables
+New Key: class net/minecraftforge/event/RegistryEvent
+New Key: class java/util/Map
+Rename field net/minecraft/world/World/provider[3982,3990]::provider->field_73011_w
+Rename field net/minecraft/entity/Entity/world[4371,4376]::world->field_70170_p
+Rename field net/minecraft/world/World/isRemote[4385,4393]::isRemote->field_72995_K
+New Key: class soundfont/nep/dungeonsixnine/Dungeon69ModVariables
+Rename field net/minecraft/entity/Entity/world[4483,4488]::world->field_70170_p
+New Key: class soundfont/nep/dungeonsixnine/Dungeon69ModVariables
+Rename field net/minecraft/entity/Entity/world[4584,4589]::world->field_70170_p
+New Key: class soundfont/nep/dungeonsixnine/Dungeon69ModVariables
+New Key: class soundfont/nep/dungeonsixnine/Dungeon69ModVariables
+Rename field net/minecraft/entity/Entity/world[5106,5111]::world->field_70170_p
+Rename field net/minecraft/world/World/isRemote[5120,5128]::isRemote->field_72995_K
+New Key: class soundfont/nep/dungeonsixnine/Dungeon69ModVariables
+Rename field net/minecraft/entity/Entity/world[5222,5227]::world->field_70170_p
+New Key: class soundfont/nep/dungeonsixnine/Dungeon69ModVariables
+FOUND CONSTR method soundfont/nep/dungeonsixnine/ElementsDungeon69Mod/ModElement/ModElement (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;I)V soundfont/nep/dungeonsixnine/ElementsDungeon69Mod/ModElement
+Import: net.minecraftforge.fml.relauncher.Side
+Import: net.minecraftforge.fml.common.registry.EntityEntry
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler
+Import: net.minecraftforge.fml.common.network.simpleimpl.IMessage
+Import: net.minecraftforge.fml.common.network.IGuiHandler
+Import: net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+Import: net.minecraftforge.fml.common.event.FMLServerStartingEvent
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLInitializationEvent
+Import: net.minecraftforge.fml.common.discovery.ASMDataTable
+Import: net.minecraftforge.fml.common.IWorldGenerator
+Import: net.minecraftforge.fml.common.IFuelHandler
+Import: net.minecraftforge.event.RegistryEvent
+Import: net.minecraftforge.client.event.ModelRegistryEvent
+Adding 19 imports
+        java.util.ArrayList
+        java.util.Collections
+        java.util.HashMap
+        java.util.List
+        java.util.Map
+        java.util.Random
+        java.util.function.Supplier
+        net.minecraft.block.Block
+        net.minecraft.entity.player.EntityPlayer
+        net.minecraft.entity.player.EntityPlayerMP
+        net.minecraft.item.Item
+        net.minecraft.item.ItemStack
+        net.minecraft.potion.Potion
+        net.minecraft.util.ResourceLocation
+        net.minecraft.world.World
+        net.minecraft.world.biome.Biome
+        net.minecraft.world.chunk.IChunkProvider
+        net.minecraft.world.gen.IChunkGenerator
+        net.minecraft.world.storage.WorldSavedData
+End  Processing: soundfont/nep/dungeonsixnine/ElementsDungeon69Mod.java
+
+Start Processing: soundfont/nep/dungeonsixnine/IProxyDungeon69Mod.java
+Import: net.minecraftforge.fml.common.event.FMLServerStartingEvent
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLInitializationEvent
+End  Processing: soundfont/nep/dungeonsixnine/IProxyDungeon69Mod.java
+
+Start Processing: soundfont/nep/dungeonsixnine/ServerProxyDungeon69Mod.java
+Import: net.minecraftforge.fml.common.event.FMLServerStartingEvent
+Import: net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+Import: net.minecraftforge.fml.common.event.FMLInitializationEvent
+End  Processing: soundfont/nep/dungeonsixnine/ServerProxyDungeon69Mod.java
+
+Start Processing: soundfont/nep/dungeonsixnine/block/BlockAlienContainer.java
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class net/minecraftforge/fml/common/registry/GameRegistry
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockAlienContainer/BlockAlienContainer (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;)V soundfont/nep/dungeonsixnine/block/BlockAlienContainer
+Rename method net/minecraft/item/Item/getItemFromBlock (Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;[2787,2803]::getItemFromBlock->func_150898_a
+Rename field net/minecraft/block/BlockHorizontal/FACING[3038,3044]::FACING->field_185512_D
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockAlienContainer/BlockCustom/BlockCustom ()V soundfont/nep/dungeonsixnine/block/BlockAlienContainer/BlockCustom
+Rename field net/minecraft/block/material/Material/IRON[3099,3103]::IRON->field_151573_f
+Rename method net/minecraft/block/Block/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/block/Block;[3120,3138]::setUnlocalizedName->func_149663_c
+Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[3158,3170]::setSoundType->func_149672_a
+Rename field net/minecraft/block/SoundType/METAL[3182,3187]::METAL->field_185852_e
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[3203,3214]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[3226,3239]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setLightLevel (F)Lnet/minecraft/block/Block;[3250,3263]::setLightLevel->func_149715_a
+Rename method net/minecraft/block/Block/setLightOpacity (I)Lnet/minecraft/block/Block;[3273,3288]::setLightOpacity->func_149713_g
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[3295,3309]::setCreativeTab->func_149647_a
+Rename method net/minecraft/block/Block/setBlockUnbreakable ()Lnet/minecraft/block/Block;[3320,3339]::setBlockUnbreakable->func_149722_s
+Rename method net/minecraft/block/Block/setDefaultState (Lnet/minecraft/block/state/IBlockState;)V[3346,3361]::setDefaultState->func_180632_j
+Rename field net/minecraft/block/Block/blockState[3365,3375]::blockState->field_176227_L
+Rename method net/minecraft/block/state/BlockStateContainer/getBaseState ()Lnet/minecraft/block/state/IBlockState;[3380,3392]::getBaseState->func_177621_b
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[3396,3408]::withProperty->func_177226_a
+Rename method net/minecraft/block/Block/createBlockState ()Lnet/minecraft/block/state/BlockStateContainer;[3517,3533]::createBlockState->func_180661_e
+Rename method net/minecraft/block/Block/withRotation (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/util/Rotation;)Lnet/minecraft/block/state/IBlockState;[3670,3682]::withRotation->func_185499_a
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[3736,3748]::withProperty->func_177226_a
+Rename method net/minecraft/util/Rotation/rotate (Lnet/minecraft/util/EnumFacing;)Lnet/minecraft/util/EnumFacing;[3762,3768]::rotate->func_185831_a
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[3795,3803]::getValue->func_177229_b
+Rename method net/minecraft/block/Block/withMirror (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/util/Mirror;)Lnet/minecraft/block/state/IBlockState;[3862,3872]::withMirror->func_185471_a
+Rename method net/minecraft/block/state/IBlockProperties/withRotation (Lnet/minecraft/util/Rotation;)Lnet/minecraft/block/state/IBlockState;[3931,3943]::withRotation->func_185907_a
+Rename method net/minecraft/util/Mirror/toRotation (Lnet/minecraft/util/EnumFacing;)Lnet/minecraft/util/Rotation;[3954,3964]::toRotation->func_185800_a
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[3987,3995]::getValue->func_177229_b
+Rename method net/minecraft/block/Block/getStateFromMeta (I)Lnet/minecraft/block/state/IBlockState;[4054,4070]::getStateFromMeta->func_176203_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[4096,4111]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[4112,4124]::withProperty->func_177226_a
+Rename method net/minecraft/util/EnumFacing/getFront (I)Lnet/minecraft/util/EnumFacing;[4145,4153]::getFront->func_82600_a
+Rename method net/minecraft/block/Block/getMetaFromState (Lnet/minecraft/block/state/IBlockState;)I[4200,4216]::getMetaFromState->func_176201_c
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[4266,4274]::getValue->func_177229_b
+Rename method net/minecraft/util/EnumFacing/getIndex ()I[4289,4297]::getIndex->func_176745_a
+Rename method net/minecraft/block/Block/getStateForPlacement (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumFacing;FFFILnet/minecraft/entity/EntityLivingBase;)Lnet/minecraft/block/state/IBlockState;[4348,4368]::getStateForPlacement->func_180642_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[4567,4582]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[4583,4595]::withProperty->func_177226_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[4640,4655]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[4656,4668]::withProperty->func_177226_a
+Rename method net/minecraft/block/Block/isOpaqueCube (Lnet/minecraft/block/state/IBlockState;)Z[4725,4737]::isOpaqueCube->func_149662_c
+Rename method net/minecraft/block/ITileEntityProvider/createNewTileEntity (Lnet/minecraft/world/World;I)Lnet/minecraft/tileentity/TileEntity;[4819,4838]::createNewTileEntity->func_149915_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[4933,4946]::eventReceived->func_189539_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[5036,5049]::eventReceived->func_189539_a
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[5129,5142]::getTileEntity->func_175625_s
+Rename method net/minecraft/tileentity/TileEntity/receiveClientEvent (II)Z[5200,5218]::receiveClientEvent->func_145842_c
+Rename method net/minecraft/block/Block/getRenderType (Lnet/minecraft/block/state/IBlockState;)Lnet/minecraft/util/EnumBlockRenderType;[5286,5299]::getRenderType->func_149645_b
+Rename method net/minecraft/block/Block/randomDisplayTick (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Ljava/util/Random;)V[5420,5437]::randomDisplayTick->func_180655_c
+Rename method net/minecraft/block/Block/randomDisplayTick (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Ljava/util/Random;)V[5507,5524]::randomDisplayTick->func_180655_c
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[5585,5597]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/player[5600,5606]::player->field_71439_g
+Rename method net/minecraft/util/math/Vec3i/getX ()I[5631,5635]::getX->func_177958_n
+Rename method net/minecraft/util/math/Vec3i/getY ()I[5664,5668]::getY->func_177956_o
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[5697,5701]::getZ->func_177952_p
+Rename method net/minecraft/world/World/spawnParticle (Lnet/minecraft/util/EnumParticleTypes;DDDDDD[I)V[6156,6169]::spawnParticle->func_175688_a
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[6387,6395]::withSize->func_191197_a
+Rename field net/minecraft/item/ItemStack/EMPTY[6414,6419]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[6458,6474]::getSizeInventory->func_70302_i_
+Rename method net/minecraft/inventory/IInventory/isEmpty ()Z[6528,6535]::isEmpty->func_191420_l
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[6610,6617]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/IInventory/isItemValidForSlot (ILnet/minecraft/item/ItemStack;)Z[6702,6720]::isItemValidForSlot->func_94041_b
+Rename method net/minecraft/inventory/IInventory/getStackInSlot (I)Lnet/minecraft/item/ItemStack;[6802,6816]::getStackInSlot->func_70301_a
+Rename method net/minecraft/world/IWorldNameable/getName ()Ljava/lang/String;[6893,6900]::getName->func_70005_c_
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[6986,6997]::readFromNBT->func_145839_a
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[7037,7048]::readFromNBT->func_145839_a
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[7103,7111]::withSize->func_191197_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[7122,7138]::getSizeInventory->func_70302_i_
+Rename field net/minecraft/item/ItemStack/EMPTY[7149,7154]::EMPTY->field_190927_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndRead (Lnet/minecraft/nbt/NBTTagCompound;)Z[7180,7196]::checkLootAndRead->func_184283_b
+Rename method net/minecraft/inventory/ItemStackHelper/loadAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)V[7226,7238]::loadAllItems->func_191283_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[7309,7319]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[7360,7370]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndWrite (Lnet/minecraft/nbt/NBTTagCompound;)Z[7399,7416]::checkLootAndWrite->func_184282_c
+Rename method net/minecraft/inventory/ItemStackHelper/saveAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)Lnet/minecraft/nbt/NBTTagCompound;[7445,7457]::saveAllItems->func_191282_a
+Rename method net/minecraft/tileentity/TileEntity/getUpdatePacket ()Lnet/minecraft/network/play/server/SPacketUpdateTileEntity;[7558,7573]::getUpdatePacket->func_189518_D_
+Rename field net/minecraft/tileentity/TileEntity/pos[7621,7624]::pos->field_174879_c
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[7645,7657]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[7709,7721]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[7744,7754]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[7889,7900]::readFromNBT->func_145839_a
+Rename method net/minecraft/network/play/server/SPacketUpdateTileEntity/getNbtCompound ()Lnet/minecraft/nbt/NBTTagCompound;[7907,7921]::getNbtCompound->func_148857_g
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[8007,8018]::readFromNBT->func_145839_a
+Rename method net/minecraft/inventory/IInventory/getInventoryStackLimit ()I[8061,8083]::getInventoryStackLimit->func_70297_j_
+Rename method net/minecraft/world/IInteractionObject/getGuiID ()Ljava/lang/String;[8131,8139]::getGuiID->func_174875_k
+Rename method net/minecraft/world/IInteractionObject/createContainer (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/inventory/Container;[8229,8244]::createContainer->func_174876_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/fillWithLoot (Lnet/minecraft/entity/player/EntityPlayer;)V[8310,8322]::fillWithLoot->func_184281_d
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/getItems ()Lnet/minecraft/util/NonNullList;[8455,8463]::getItems->func_190576_q
+Import: soundfont.nep.dungeonsixnine.ElementsDungeon69Mod
+Adding 39 imports
+        java.util.Random
+        net.minecraft.block.Block
+        net.minecraft.block.BlockHorizontal
+        net.minecraft.block.ITileEntityProvider
+        net.minecraft.block.SoundType
+        net.minecraft.block.material.Material
+        net.minecraft.block.properties.IProperty
+        net.minecraft.block.properties.PropertyDirection
+        net.minecraft.block.state.IBlockState
+        net.minecraft.client.Minecraft
+        net.minecraft.client.renderer.block.model.ModelResourceLocation
+        net.minecraft.entity.EntityLivingBase
+        net.minecraft.entity.player.EntityPlayer
+        net.minecraft.entity.player.InventoryPlayer
+        net.minecraft.inventory.Container
+        net.minecraft.inventory.ContainerChest
+        net.minecraft.inventory.ItemStackHelper
+        net.minecraft.item.Item
+        net.minecraft.item.ItemBlock
+        net.minecraft.item.ItemStack
+        net.minecraft.nbt.NBTTagCompound
+        net.minecraft.network.NetworkManager
+        net.minecraft.network.play.server.SPacketUpdateTileEntity
+        net.minecraft.tileentity.TileEntity
+        net.minecraft.tileentity.TileEntityLockableLoot
+        net.minecraft.util.EnumBlockRenderType
+        net.minecraft.util.EnumFacing
+        net.minecraft.util.EnumParticleTypes
+        net.minecraft.util.Mirror
+        net.minecraft.util.NonNullList
+        net.minecraft.util.Rotation
+        net.minecraft.util.math.BlockPos
+        net.minecraft.world.World
+        net.minecraftforge.client.event.ModelRegistryEvent
+        net.minecraftforge.client.model.ModelLoader
+        net.minecraftforge.fml.common.event.FMLInitializationEvent
+        net.minecraftforge.fml.common.registry.GameRegistry
+        net.minecraftforge.fml.relauncher.Side
+        net.minecraftforge.fml.relauncher.SideOnly
+End  Processing: soundfont/nep/dungeonsixnine/block/BlockAlienContainer.java
+
+Start Processing: soundfont/nep/dungeonsixnine/block/BlockBattery.java
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class net/minecraftforge/fml/common/registry/GameRegistry
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockBattery/BlockBattery (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;)V soundfont/nep/dungeonsixnine/block/BlockBattery
+Rename method net/minecraft/item/Item/getItemFromBlock (Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;[2447,2463]::getItemFromBlock->func_150898_a
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockBattery/BlockCustom/BlockCustom ()V soundfont/nep/dungeonsixnine/block/BlockBattery/BlockCustom
+Rename field net/minecraft/block/material/Material/ANVIL[2664,2669]::ANVIL->field_151574_g
+Rename method net/minecraft/block/Block/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/block/Block;[2685,2703]::setUnlocalizedName->func_149663_c
+Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[2715,2727]::setSoundType->func_149672_a
+Rename field net/minecraft/block/SoundType/ANVIL[2739,2744]::ANVIL->field_185858_k
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[2760,2771]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[2783,2796]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setLightLevel (F)Lnet/minecraft/block/Block;[2807,2820]::setLightLevel->func_149715_a
+Rename method net/minecraft/block/Block/setLightOpacity (I)Lnet/minecraft/block/Block;[2830,2845]::setLightOpacity->func_149713_g
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[2854,2868]::setCreativeTab->func_149647_a
+Rename method net/minecraft/block/Block/setBlockUnbreakable ()Lnet/minecraft/block/Block;[2879,2898]::setBlockUnbreakable->func_149722_s
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[2931,2945]::addInformation->func_190948_a
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[3029,3043]::addInformation->func_190948_a
+Rename method net/minecraft/block/ITileEntityProvider/createNewTileEntity (Lnet/minecraft/world/World;I)Lnet/minecraft/tileentity/TileEntity;[3162,3181]::createNewTileEntity->func_149915_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[3276,3289]::eventReceived->func_189539_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[3379,3392]::eventReceived->func_189539_a
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[3472,3485]::getTileEntity->func_175625_s
+Rename method net/minecraft/tileentity/TileEntity/receiveClientEvent (II)Z[3543,3561]::receiveClientEvent->func_145842_c
+Rename method net/minecraft/block/Block/getRenderType (Lnet/minecraft/block/state/IBlockState;)Lnet/minecraft/util/EnumBlockRenderType;[3629,3642]::getRenderType->func_149645_b
+Rename method net/minecraft/block/Block/breakBlock (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)V[3737,3747]::breakBlock->func_180663_b
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[3833,3846]::getTileEntity->func_175625_s
+Rename method net/minecraft/inventory/InventoryHelper/dropInventoryItems (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/inventory/IInventory;)V[3922,3940]::dropInventoryItems->func_180175_a
+Rename method net/minecraft/world/World/removeTileEntity (Lnet/minecraft/util/math/BlockPos;)V[3990,4006]::removeTileEntity->func_175713_t
+Rename method net/minecraft/block/Block/breakBlock (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)V[4020,4030]::breakBlock->func_180663_b
+Rename method net/minecraft/block/Block/hasComparatorInputOverride (Lnet/minecraft/block/state/IBlockState;)Z[4092,4118]::hasComparatorInputOverride->func_149740_M
+Rename method net/minecraft/block/Block/getComparatorInputOverride (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I[4178,4204]::getComparatorInputOverride->func_180641_l
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[4283,4296]::getTileEntity->func_175625_s
+Rename method net/minecraft/inventory/Container/calcRedstoneFromInventory (Lnet/minecraft/inventory/IInventory;)I[4373,4398]::calcRedstoneFromInventory->func_94526_b
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[4591,4599]::withSize->func_191197_a
+Rename field net/minecraft/item/ItemStack/EMPTY[4618,4623]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[4662,4678]::getSizeInventory->func_70302_i_
+Rename method net/minecraft/inventory/IInventory/isEmpty ()Z[4732,4739]::isEmpty->func_191420_l
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[4814,4821]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/IInventory/isItemValidForSlot (ILnet/minecraft/item/ItemStack;)Z[4906,4924]::isItemValidForSlot->func_94041_b
+Rename method net/minecraft/inventory/IInventory/getStackInSlot (I)Lnet/minecraft/item/ItemStack;[5045,5059]::getStackInSlot->func_70301_a
+Rename method net/minecraft/world/IWorldNameable/getName ()Ljava/lang/String;[5136,5143]::getName->func_70005_c_
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[5221,5232]::readFromNBT->func_145839_a
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[5272,5283]::readFromNBT->func_145839_a
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[5338,5346]::withSize->func_191197_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[5357,5373]::getSizeInventory->func_70302_i_
+Rename field net/minecraft/item/ItemStack/EMPTY[5384,5389]::EMPTY->field_190927_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndRead (Lnet/minecraft/nbt/NBTTagCompound;)Z[5415,5431]::checkLootAndRead->func_184283_b
+Rename method net/minecraft/inventory/ItemStackHelper/loadAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)V[5461,5473]::loadAllItems->func_191283_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[5544,5554]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[5595,5605]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndWrite (Lnet/minecraft/nbt/NBTTagCompound;)Z[5634,5651]::checkLootAndWrite->func_184282_c
+Rename method net/minecraft/inventory/ItemStackHelper/saveAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)Lnet/minecraft/nbt/NBTTagCompound;[5680,5692]::saveAllItems->func_191282_a
+Rename method net/minecraft/tileentity/TileEntity/getUpdatePacket ()Lnet/minecraft/network/play/server/SPacketUpdateTileEntity;[5793,5808]::getUpdatePacket->func_189518_D_
+Rename field net/minecraft/tileentity/TileEntity/pos[5856,5859]::pos->field_174879_c
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[5880,5892]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[5944,5956]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[5979,5989]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[6124,6135]::readFromNBT->func_145839_a
+Rename method net/minecraft/network/play/server/SPacketUpdateTileEntity/getNbtCompound ()Lnet/minecraft/nbt/NBTTagCompound;[6142,6156]::getNbtCompound->func_148857_g
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[6242,6253]::readFromNBT->func_145839_a
+Rename method net/minecraft/inventory/IInventory/getInventoryStackLimit ()I[6296,6318]::getInventoryStackLimit->func_70297_j_
+Rename method net/minecraft/world/IInteractionObject/getGuiID ()Ljava/lang/String;[6365,6373]::getGuiID->func_174875_k
+Rename method net/minecraft/world/IInteractionObject/createContainer (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/inventory/Container;[6455,6470]::createContainer->func_174876_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/fillWithLoot (Lnet/minecraft/entity/player/EntityPlayer;)V[6536,6548]::fillWithLoot->func_184281_d
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/getItems ()Lnet/minecraft/util/NonNullList;[6681,6689]::getItems->func_190576_q
+Import: soundfont.nep.dungeonsixnine.ElementsDungeon69Mod
+Adding 32 imports
+        java.util.List
+        net.minecraft.block.Block
+        net.minecraft.block.ITileEntityProvider
+        net.minecraft.block.SoundType
+        net.minecraft.block.material.Material
+        net.minecraft.block.state.IBlockState
+        net.minecraft.client.renderer.block.model.ModelResourceLocation
+        net.minecraft.client.util.ITooltipFlag
+        net.minecraft.entity.player.EntityPlayer
+        net.minecraft.entity.player.InventoryPlayer
+        net.minecraft.inventory.Container
+        net.minecraft.inventory.ContainerChest
+        net.minecraft.inventory.InventoryHelper
+        net.minecraft.inventory.ItemStackHelper
+        net.minecraft.item.Item
+        net.minecraft.item.ItemBlock
+        net.minecraft.item.ItemStack
+        net.minecraft.nbt.NBTTagCompound
+        net.minecraft.network.NetworkManager
+        net.minecraft.network.play.server.SPacketUpdateTileEntity
+        net.minecraft.tileentity.TileEntity
+        net.minecraft.tileentity.TileEntityLockableLoot
+        net.minecraft.util.EnumBlockRenderType
+        net.minecraft.util.NonNullList
+        net.minecraft.util.math.BlockPos
+        net.minecraft.world.World
+        net.minecraftforge.client.event.ModelRegistryEvent
+        net.minecraftforge.client.model.ModelLoader
+        net.minecraftforge.fml.common.event.FMLInitializationEvent
+        net.minecraftforge.fml.common.registry.GameRegistry
+        net.minecraftforge.fml.relauncher.Side
+        net.minecraftforge.fml.relauncher.SideOnly
+End  Processing: soundfont/nep/dungeonsixnine/block/BlockBattery.java
+
+Start Processing: soundfont/nep/dungeonsixnine/block/BlockCrateRandomizer.java
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class net/minecraftforge/fml/common/registry/GameRegistry
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockCrateRandomizer/BlockCrateRandomizer (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;)V soundfont/nep/dungeonsixnine/block/BlockCrateRandomizer
+Rename method net/minecraft/item/Item/getItemFromBlock (Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;[1764,1780]::getItemFromBlock->func_150898_a
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockCrateRandomizer/BlockCustom/BlockCustom ()V soundfont/nep/dungeonsixnine/block/BlockCrateRandomizer/BlockCustom
+Rename field net/minecraft/block/material/Material/ROCK[1964,1968]::ROCK->field_151576_e
+Rename method net/minecraft/block/Block/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/block/Block;[1985,2003]::setUnlocalizedName->func_149663_c
+Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[2024,2036]::setSoundType->func_149672_a
+Rename field net/minecraft/block/SoundType/GLASS[2048,2053]::GLASS->field_185853_f
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[2069,2080]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[2092,2105]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setLightLevel (F)Lnet/minecraft/block/Block;[2116,2129]::setLightLevel->func_149715_a
+Rename method net/minecraft/block/Block/setLightOpacity (I)Lnet/minecraft/block/Block;[2139,2154]::setLightOpacity->func_149713_g
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[2163,2177]::setCreativeTab->func_149647_a
+Rename field net/minecraft/creativetab/CreativeTabs/BUILDING_BLOCKS[2190,2205]::BUILDING_BLOCKS->field_78030_b
+Rename method net/minecraft/block/Block/setBlockUnbreakable ()Lnet/minecraft/block/Block;[2210,2229]::setBlockUnbreakable->func_149722_s
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[2262,2276]::addInformation->func_190948_a
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[2360,2374]::addInformation->func_190948_a
+Rename method net/minecraft/block/Block/onBlockAdded (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)V[2501,2513]::onBlockAdded->func_176213_c
+Rename method net/minecraft/block/Block/onBlockAdded (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)V[2573,2585]::onBlockAdded->func_176213_c
+Rename method net/minecraft/util/math/Vec3i/getX ()I[2623,2627]::getX->func_177958_n
+Rename method net/minecraft/util/math/Vec3i/getY ()I[2656,2660]::getY->func_177956_o
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[2689,2693]::getZ->func_177952_p
+Rename method net/minecraft/world/World/scheduleUpdate (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;I)V[2716,2730]::scheduleUpdate->func_175684_a
+Rename method net/minecraft/block/Block/tickRate (Lnet/minecraft/world/World;)I[2764,2772]::tickRate->func_149738_a
+Rename method net/minecraft/block/Block/updateTick (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Ljava/util/Random;)V[2822,2832]::updateTick->func_180650_b
+Rename method net/minecraft/block/Block/updateTick (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Ljava/util/Random;)V[2909,2919]::updateTick->func_180650_b
+Rename method net/minecraft/util/math/Vec3i/getX ()I[2967,2971]::getX->func_177958_n
+Rename method net/minecraft/util/math/Vec3i/getY ()I[3000,3004]::getY->func_177956_o
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[3033,3037]::getZ->func_177952_p
+Rename method net/minecraft/world/World/scheduleUpdate (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;I)V[3335,3349]::scheduleUpdate->func_175684_a
+Rename method net/minecraft/block/Block/tickRate (Lnet/minecraft/world/World;)I[3383,3391]::tickRate->func_149738_a
+Import: soundfont.nep.dungeonsixnine.procedure.ProcedureContainerScript
+Import: soundfont.nep.dungeonsixnine.ElementsDungeon69Mod
+Adding 21 imports
+        java.util.HashMap
+        java.util.List
+        java.util.Map
+        java.util.Random
+        net.minecraft.block.Block
+        net.minecraft.block.SoundType
+        net.minecraft.block.material.Material
+        net.minecraft.block.state.IBlockState
+        net.minecraft.client.renderer.block.model.ModelResourceLocation
+        net.minecraft.client.util.ITooltipFlag
+        net.minecraft.creativetab.CreativeTabs
+        net.minecraft.item.Item
+        net.minecraft.item.ItemBlock
+        net.minecraft.item.ItemStack
+        net.minecraft.util.math.BlockPos
+        net.minecraft.world.World
+        net.minecraftforge.client.event.ModelRegistryEvent
+        net.minecraftforge.client.model.ModelLoader
+        net.minecraftforge.fml.common.registry.GameRegistry
+        net.minecraftforge.fml.relauncher.Side
+        net.minecraftforge.fml.relauncher.SideOnly
+End  Processing: soundfont/nep/dungeonsixnine/block/BlockCrateRandomizer.java
+
+Start Processing: soundfont/nep/dungeonsixnine/block/BlockReloadMetal.java
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class net/minecraftforge/fml/common/registry/GameRegistry
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockReloadMetal/BlockReloadMetal (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;)V soundfont/nep/dungeonsixnine/block/BlockReloadMetal
+Rename method net/minecraft/item/Item/getItemFromBlock (Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;[2470,2486]::getItemFromBlock->func_150898_a
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockReloadMetal/BlockCustom/BlockCustom ()V soundfont/nep/dungeonsixnine/block/BlockReloadMetal/BlockCustom
+Rename field net/minecraft/block/material/Material/IRON[2692,2696]::IRON->field_151573_f
+Rename method net/minecraft/block/Block/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/block/Block;[2713,2731]::setUnlocalizedName->func_149663_c
+Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[2748,2760]::setSoundType->func_149672_a
+Rename field net/minecraft/block/SoundType/METAL[2772,2777]::METAL->field_185852_e
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[2793,2804]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[2816,2829]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setLightLevel (F)Lnet/minecraft/block/Block;[2840,2853]::setLightLevel->func_149715_a
+Rename method net/minecraft/block/Block/setLightOpacity (I)Lnet/minecraft/block/Block;[2863,2878]::setLightOpacity->func_149713_g
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[2887,2901]::setCreativeTab->func_149647_a
+Rename method net/minecraft/block/Block/setBlockUnbreakable ()Lnet/minecraft/block/Block;[2912,2931]::setBlockUnbreakable->func_149722_s
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[2964,2978]::addInformation->func_190948_a
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[3062,3076]::addInformation->func_190948_a
+Rename method net/minecraft/block/ITileEntityProvider/createNewTileEntity (Lnet/minecraft/world/World;I)Lnet/minecraft/tileentity/TileEntity;[3251,3270]::createNewTileEntity->func_149915_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[3365,3378]::eventReceived->func_189539_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[3468,3481]::eventReceived->func_189539_a
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[3561,3574]::getTileEntity->func_175625_s
+Rename method net/minecraft/tileentity/TileEntity/receiveClientEvent (II)Z[3632,3650]::receiveClientEvent->func_145842_c
+Rename method net/minecraft/block/Block/getRenderType (Lnet/minecraft/block/state/IBlockState;)Lnet/minecraft/util/EnumBlockRenderType;[3718,3731]::getRenderType->func_149645_b
+Rename method net/minecraft/block/Block/breakBlock (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)V[3826,3836]::breakBlock->func_180663_b
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[3922,3935]::getTileEntity->func_175625_s
+Rename method net/minecraft/inventory/InventoryHelper/dropInventoryItems (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/inventory/IInventory;)V[4011,4029]::dropInventoryItems->func_180175_a
+Rename method net/minecraft/world/World/removeTileEntity (Lnet/minecraft/util/math/BlockPos;)V[4079,4095]::removeTileEntity->func_175713_t
+Rename method net/minecraft/block/Block/breakBlock (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)V[4109,4119]::breakBlock->func_180663_b
+Rename method net/minecraft/block/Block/hasComparatorInputOverride (Lnet/minecraft/block/state/IBlockState;)Z[4181,4207]::hasComparatorInputOverride->func_149740_M
+Rename method net/minecraft/block/Block/getComparatorInputOverride (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I[4267,4293]::getComparatorInputOverride->func_180641_l
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[4372,4385]::getTileEntity->func_175625_s
+Rename method net/minecraft/inventory/Container/calcRedstoneFromInventory (Lnet/minecraft/inventory/IInventory;)I[4462,4487]::calcRedstoneFromInventory->func_94526_b
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[4680,4688]::withSize->func_191197_a
+Rename field net/minecraft/item/ItemStack/EMPTY[4707,4712]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[4751,4767]::getSizeInventory->func_70302_i_
+Rename method net/minecraft/inventory/IInventory/isEmpty ()Z[4821,4828]::isEmpty->func_191420_l
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[4903,4910]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/IInventory/isItemValidForSlot (ILnet/minecraft/item/ItemStack;)Z[4995,5013]::isItemValidForSlot->func_94041_b
+Rename method net/minecraft/inventory/IInventory/getStackInSlot (I)Lnet/minecraft/item/ItemStack;[5095,5109]::getStackInSlot->func_70301_a
+Rename method net/minecraft/world/IWorldNameable/getName ()Ljava/lang/String;[5186,5193]::getName->func_70005_c_
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[5276,5287]::readFromNBT->func_145839_a
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[5327,5338]::readFromNBT->func_145839_a
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[5393,5401]::withSize->func_191197_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[5412,5428]::getSizeInventory->func_70302_i_
+Rename field net/minecraft/item/ItemStack/EMPTY[5439,5444]::EMPTY->field_190927_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndRead (Lnet/minecraft/nbt/NBTTagCompound;)Z[5470,5486]::checkLootAndRead->func_184283_b
+Rename method net/minecraft/inventory/ItemStackHelper/loadAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)V[5516,5528]::loadAllItems->func_191283_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[5599,5609]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[5650,5660]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndWrite (Lnet/minecraft/nbt/NBTTagCompound;)Z[5689,5706]::checkLootAndWrite->func_184282_c
+Rename method net/minecraft/inventory/ItemStackHelper/saveAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)Lnet/minecraft/nbt/NBTTagCompound;[5735,5747]::saveAllItems->func_191282_a
+Rename method net/minecraft/tileentity/TileEntity/getUpdatePacket ()Lnet/minecraft/network/play/server/SPacketUpdateTileEntity;[5848,5863]::getUpdatePacket->func_189518_D_
+Rename field net/minecraft/tileentity/TileEntity/pos[5911,5914]::pos->field_174879_c
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[5935,5947]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[5999,6011]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[6034,6044]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[6179,6190]::readFromNBT->func_145839_a
+Rename method net/minecraft/network/play/server/SPacketUpdateTileEntity/getNbtCompound ()Lnet/minecraft/nbt/NBTTagCompound;[6197,6211]::getNbtCompound->func_148857_g
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[6297,6308]::readFromNBT->func_145839_a
+Rename method net/minecraft/inventory/IInventory/getInventoryStackLimit ()I[6351,6373]::getInventoryStackLimit->func_70297_j_
+Rename method net/minecraft/world/IInteractionObject/getGuiID ()Ljava/lang/String;[6421,6429]::getGuiID->func_174875_k
+Rename method net/minecraft/world/IInteractionObject/createContainer (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/inventory/Container;[6516,6531]::createContainer->func_174876_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/fillWithLoot (Lnet/minecraft/entity/player/EntityPlayer;)V[6597,6609]::fillWithLoot->func_184281_d
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/getItems ()Lnet/minecraft/util/NonNullList;[6742,6750]::getItems->func_190576_q
+Import: soundfont.nep.dungeonsixnine.ElementsDungeon69Mod
+Adding 32 imports
+        java.util.List
+        net.minecraft.block.Block
+        net.minecraft.block.ITileEntityProvider
+        net.minecraft.block.SoundType
+        net.minecraft.block.material.Material
+        net.minecraft.block.state.IBlockState
+        net.minecraft.client.renderer.block.model.ModelResourceLocation
+        net.minecraft.client.util.ITooltipFlag
+        net.minecraft.entity.player.EntityPlayer
+        net.minecraft.entity.player.InventoryPlayer
+        net.minecraft.inventory.Container
+        net.minecraft.inventory.ContainerChest
+        net.minecraft.inventory.InventoryHelper
+        net.minecraft.inventory.ItemStackHelper
+        net.minecraft.item.Item
+        net.minecraft.item.ItemBlock
+        net.minecraft.item.ItemStack
+        net.minecraft.nbt.NBTTagCompound
+        net.minecraft.network.NetworkManager
+        net.minecraft.network.play.server.SPacketUpdateTileEntity
+        net.minecraft.tileentity.TileEntity
+        net.minecraft.tileentity.TileEntityLockableLoot
+        net.minecraft.util.EnumBlockRenderType
+        net.minecraft.util.NonNullList
+        net.minecraft.util.math.BlockPos
+        net.minecraft.world.World
+        net.minecraftforge.client.event.ModelRegistryEvent
+        net.minecraftforge.client.model.ModelLoader
+        net.minecraftforge.fml.common.event.FMLInitializationEvent
+        net.minecraftforge.fml.common.registry.GameRegistry
+        net.minecraftforge.fml.relauncher.Side
+        net.minecraftforge.fml.relauncher.SideOnly
+End  Processing: soundfont/nep/dungeonsixnine/block/BlockReloadMetal.java
+
+Start Processing: soundfont/nep/dungeonsixnine/block/BlockReloadTank.java
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class net/minecraftforge/fml/common/registry/GameRegistry
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockReloadTank/BlockReloadTank (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;)V soundfont/nep/dungeonsixnine/block/BlockReloadTank
+Rename method net/minecraft/item/Item/getItemFromBlock (Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;[2625,2641]::getItemFromBlock->func_150898_a
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockReloadTank/BlockCustom/BlockCustom ()V soundfont/nep/dungeonsixnine/block/BlockReloadTank/BlockCustom
+Rename field net/minecraft/block/material/Material/IRON[2846,2850]::IRON->field_151573_f
+Rename method net/minecraft/block/Block/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/block/Block;[2867,2885]::setUnlocalizedName->func_149663_c
+Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[2901,2913]::setSoundType->func_149672_a
+Rename field net/minecraft/block/SoundType/METAL[2925,2930]::METAL->field_185852_e
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[2946,2957]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[2969,2982]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setLightLevel (F)Lnet/minecraft/block/Block;[2993,3006]::setLightLevel->func_149715_a
+Rename method net/minecraft/block/Block/setLightOpacity (I)Lnet/minecraft/block/Block;[3016,3031]::setLightOpacity->func_149713_g
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[3040,3054]::setCreativeTab->func_149647_a
+Rename field net/minecraft/creativetab/CreativeTabs/BUILDING_BLOCKS[3067,3082]::BUILDING_BLOCKS->field_78030_b
+Rename method net/minecraft/block/Block/setBlockUnbreakable ()Lnet/minecraft/block/Block;[3087,3106]::setBlockUnbreakable->func_149722_s
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[3139,3153]::addInformation->func_190948_a
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[3237,3251]::addInformation->func_190948_a
+Rename method net/minecraft/block/Block/isOpaqueCube (Lnet/minecraft/block/state/IBlockState;)Z[3455,3467]::isOpaqueCube->func_149662_c
+Rename method net/minecraft/block/ITileEntityProvider/createNewTileEntity (Lnet/minecraft/world/World;I)Lnet/minecraft/tileentity/TileEntity;[3549,3568]::createNewTileEntity->func_149915_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[3663,3676]::eventReceived->func_189539_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[3766,3779]::eventReceived->func_189539_a
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[3859,3872]::getTileEntity->func_175625_s
+Rename method net/minecraft/tileentity/TileEntity/receiveClientEvent (II)Z[3930,3948]::receiveClientEvent->func_145842_c
+Rename method net/minecraft/block/Block/getRenderType (Lnet/minecraft/block/state/IBlockState;)Lnet/minecraft/util/EnumBlockRenderType;[4016,4029]::getRenderType->func_149645_b
+Rename method net/minecraft/block/Block/breakBlock (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)V[4124,4134]::breakBlock->func_180663_b
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[4220,4233]::getTileEntity->func_175625_s
+Rename method net/minecraft/inventory/InventoryHelper/dropInventoryItems (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/inventory/IInventory;)V[4309,4327]::dropInventoryItems->func_180175_a
+Rename method net/minecraft/world/World/removeTileEntity (Lnet/minecraft/util/math/BlockPos;)V[4377,4393]::removeTileEntity->func_175713_t
+Rename method net/minecraft/block/Block/breakBlock (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)V[4407,4417]::breakBlock->func_180663_b
+Rename method net/minecraft/block/Block/hasComparatorInputOverride (Lnet/minecraft/block/state/IBlockState;)Z[4479,4505]::hasComparatorInputOverride->func_149740_M
+Rename method net/minecraft/block/Block/getComparatorInputOverride (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)I[4565,4591]::getComparatorInputOverride->func_180641_l
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[4670,4683]::getTileEntity->func_175625_s
+Rename method net/minecraft/inventory/Container/calcRedstoneFromInventory (Lnet/minecraft/inventory/IInventory;)I[4760,4785]::calcRedstoneFromInventory->func_94526_b
+Rename method net/minecraft/block/Block/randomDisplayTick (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Ljava/util/Random;)V[4890,4907]::randomDisplayTick->func_180655_c
+Rename method net/minecraft/block/Block/randomDisplayTick (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Ljava/util/Random;)V[4977,4994]::randomDisplayTick->func_180655_c
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[5055,5067]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/player[5070,5076]::player->field_71439_g
+Rename method net/minecraft/util/math/Vec3i/getX ()I[5101,5105]::getX->func_177958_n
+Rename method net/minecraft/util/math/Vec3i/getY ()I[5134,5138]::getY->func_177956_o
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[5167,5171]::getZ->func_177952_p
+Rename method net/minecraft/world/World/spawnParticle (Lnet/minecraft/util/EnumParticleTypes;DDDDDD[I)V[5626,5639]::spawnParticle->func_175688_a
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[5857,5865]::withSize->func_191197_a
+Rename field net/minecraft/item/ItemStack/EMPTY[5884,5889]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[5928,5944]::getSizeInventory->func_70302_i_
+Rename method net/minecraft/inventory/IInventory/isEmpty ()Z[5998,6005]::isEmpty->func_191420_l
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[6080,6087]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/IInventory/isItemValidForSlot (ILnet/minecraft/item/ItemStack;)Z[6172,6190]::isItemValidForSlot->func_94041_b
+Rename method net/minecraft/inventory/IInventory/getStackInSlot (I)Lnet/minecraft/item/ItemStack;[6272,6286]::getStackInSlot->func_70301_a
+Rename method net/minecraft/world/IWorldNameable/getName ()Ljava/lang/String;[6363,6370]::getName->func_70005_c_
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[6452,6463]::readFromNBT->func_145839_a
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[6503,6514]::readFromNBT->func_145839_a
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[6569,6577]::withSize->func_191197_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[6588,6604]::getSizeInventory->func_70302_i_
+Rename field net/minecraft/item/ItemStack/EMPTY[6615,6620]::EMPTY->field_190927_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndRead (Lnet/minecraft/nbt/NBTTagCompound;)Z[6646,6662]::checkLootAndRead->func_184283_b
+Rename method net/minecraft/inventory/ItemStackHelper/loadAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)V[6692,6704]::loadAllItems->func_191283_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[6775,6785]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[6826,6836]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndWrite (Lnet/minecraft/nbt/NBTTagCompound;)Z[6865,6882]::checkLootAndWrite->func_184282_c
+Rename method net/minecraft/inventory/ItemStackHelper/saveAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)Lnet/minecraft/nbt/NBTTagCompound;[6911,6923]::saveAllItems->func_191282_a
+Rename method net/minecraft/tileentity/TileEntity/getUpdatePacket ()Lnet/minecraft/network/play/server/SPacketUpdateTileEntity;[7024,7039]::getUpdatePacket->func_189518_D_
+Rename field net/minecraft/tileentity/TileEntity/pos[7087,7090]::pos->field_174879_c
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[7111,7123]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[7175,7187]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[7210,7220]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[7355,7366]::readFromNBT->func_145839_a
+Rename method net/minecraft/network/play/server/SPacketUpdateTileEntity/getNbtCompound ()Lnet/minecraft/nbt/NBTTagCompound;[7373,7387]::getNbtCompound->func_148857_g
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[7473,7484]::readFromNBT->func_145839_a
+Rename method net/minecraft/inventory/IInventory/getInventoryStackLimit ()I[7527,7549]::getInventoryStackLimit->func_70297_j_
+Rename method net/minecraft/world/IInteractionObject/getGuiID ()Ljava/lang/String;[7597,7605]::getGuiID->func_174875_k
+Rename method net/minecraft/world/IInteractionObject/createContainer (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/inventory/Container;[7691,7706]::createContainer->func_174876_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/fillWithLoot (Lnet/minecraft/entity/player/EntityPlayer;)V[7772,7784]::fillWithLoot->func_184281_d
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/getItems ()Lnet/minecraft/util/NonNullList;[7917,7925]::getItems->func_190576_q
+Import: soundfont.nep.dungeonsixnine.ElementsDungeon69Mod
+Adding 36 imports
+        java.util.List
+        java.util.Random
+        net.minecraft.block.Block
+        net.minecraft.block.ITileEntityProvider
+        net.minecraft.block.SoundType
+        net.minecraft.block.material.Material
+        net.minecraft.block.state.IBlockState
+        net.minecraft.client.Minecraft
+        net.minecraft.client.renderer.block.model.ModelResourceLocation
+        net.minecraft.client.util.ITooltipFlag
+        net.minecraft.creativetab.CreativeTabs
+        net.minecraft.entity.player.EntityPlayer
+        net.minecraft.entity.player.InventoryPlayer
+        net.minecraft.inventory.Container
+        net.minecraft.inventory.ContainerChest
+        net.minecraft.inventory.InventoryHelper
+        net.minecraft.inventory.ItemStackHelper
+        net.minecraft.item.Item
+        net.minecraft.item.ItemBlock
+        net.minecraft.item.ItemStack
+        net.minecraft.nbt.NBTTagCompound
+        net.minecraft.network.NetworkManager
+        net.minecraft.network.play.server.SPacketUpdateTileEntity
+        net.minecraft.tileentity.TileEntity
+        net.minecraft.tileentity.TileEntityLockableLoot
+        net.minecraft.util.EnumBlockRenderType
+        net.minecraft.util.EnumParticleTypes
+        net.minecraft.util.NonNullList
+        net.minecraft.util.math.BlockPos
+        net.minecraft.world.World
+        net.minecraftforge.client.event.ModelRegistryEvent
+        net.minecraftforge.client.model.ModelLoader
+        net.minecraftforge.fml.common.event.FMLInitializationEvent
+        net.minecraftforge.fml.common.registry.GameRegistry
+        net.minecraftforge.fml.relauncher.Side
+        net.minecraftforge.fml.relauncher.SideOnly
+End  Processing: soundfont/nep/dungeonsixnine/block/BlockReloadTank.java
+
+Start Processing: soundfont/nep/dungeonsixnine/block/BlockReloadablecrate.java
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class net/minecraftforge/fml/common/registry/GameRegistry
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockReloadablecrate/BlockReloadablecrate (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;)V soundfont/nep/dungeonsixnine/block/BlockReloadablecrate
+Rename method net/minecraft/item/Item/getItemFromBlock (Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;[2514,2530]::getItemFromBlock->func_150898_a
+FOUND CONSTR method soundfont/nep/dungeonsixnine/block/BlockReloadablecrate/BlockCustom/BlockCustom ()V soundfont/nep/dungeonsixnine/block/BlockReloadablecrate/BlockCustom
+Rename field net/minecraft/block/material/Material/WOOD[2744,2748]::WOOD->field_151575_d
+Rename method net/minecraft/block/Block/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/block/Block;[2765,2783]::setUnlocalizedName->func_149663_c
+Rename method net/minecraft/block/Block/setSoundType (Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;[2803,2815]::setSoundType->func_149672_a
+Rename field net/minecraft/block/SoundType/WOOD[2827,2831]::WOOD->field_185848_a
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[2848,2859]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setResistance (F)Lnet/minecraft/block/Block;[2871,2884]::setResistance->func_149752_b
+Rename method net/minecraft/block/Block/setLightLevel (F)Lnet/minecraft/block/Block;[2895,2908]::setLightLevel->func_149715_a
+Rename method net/minecraft/block/Block/setLightOpacity (I)Lnet/minecraft/block/Block;[2918,2933]::setLightOpacity->func_149713_g
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[2942,2956]::setCreativeTab->func_149647_a
+Rename method net/minecraft/block/Block/setBlockUnbreakable ()Lnet/minecraft/block/Block;[2967,2986]::setBlockUnbreakable->func_149722_s
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[3019,3033]::addInformation->func_190948_a
+Rename method net/minecraft/block/Block/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[3117,3131]::addInformation->func_190948_a
+Rename method net/minecraft/block/ITileEntityProvider/createNewTileEntity (Lnet/minecraft/world/World;I)Lnet/minecraft/tileentity/TileEntity;[3388,3407]::createNewTileEntity->func_149915_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[3502,3515]::eventReceived->func_189539_a
+Rename method net/minecraft/block/Block/eventReceived (Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z[3605,3618]::eventReceived->func_189539_a
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[3698,3711]::getTileEntity->func_175625_s
+Rename method net/minecraft/tileentity/TileEntity/receiveClientEvent (II)Z[3769,3787]::receiveClientEvent->func_145842_c
+Rename method net/minecraft/block/Block/getRenderType (Lnet/minecraft/block/state/IBlockState;)Lnet/minecraft/util/EnumBlockRenderType;[3855,3868]::getRenderType->func_149645_b
+Rename method net/minecraft/block/Block/onBlockActivated (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Z[3966,3982]::onBlockActivated->func_180639_a
+Rename method net/minecraft/block/Block/onBlockActivated (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Z[4137,4153]::onBlockActivated->func_180639_a
+Rename method net/minecraft/util/math/Vec3i/getX ()I[4230,4234]::getX->func_177958_n
+Rename method net/minecraft/util/math/Vec3i/getY ()I[4263,4267]::getY->func_177956_o
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[4296,4300]::getZ->func_177952_p
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[4479,4487]::withSize->func_191197_a
+Rename field net/minecraft/item/ItemStack/EMPTY[4506,4511]::EMPTY->field_190927_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[4550,4566]::getSizeInventory->func_70302_i_
+Rename method net/minecraft/inventory/IInventory/isEmpty ()Z[4620,4627]::isEmpty->func_191420_l
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[4702,4709]::isEmpty->func_190926_b
+Rename method net/minecraft/inventory/IInventory/isItemValidForSlot (ILnet/minecraft/item/ItemStack;)Z[4794,4812]::isItemValidForSlot->func_94041_b
+Rename method net/minecraft/inventory/IInventory/getStackInSlot (I)Lnet/minecraft/item/ItemStack;[5011,5025]::getStackInSlot->func_70301_a
+Rename method net/minecraft/world/IWorldNameable/getName ()Ljava/lang/String;[5102,5109]::getName->func_70005_c_
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[5195,5206]::readFromNBT->func_145839_a
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[5246,5257]::readFromNBT->func_145839_a
+Rename method net/minecraft/util/NonNullList/withSize (ILjava/lang/Object;)Lnet/minecraft/util/NonNullList;[5312,5320]::withSize->func_191197_a
+Rename method net/minecraft/inventory/IInventory/getSizeInventory ()I[5331,5347]::getSizeInventory->func_70302_i_
+Rename field net/minecraft/item/ItemStack/EMPTY[5358,5363]::EMPTY->field_190927_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndRead (Lnet/minecraft/nbt/NBTTagCompound;)Z[5389,5405]::checkLootAndRead->func_184283_b
+Rename method net/minecraft/inventory/ItemStackHelper/loadAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)V[5435,5447]::loadAllItems->func_191283_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[5518,5528]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[5569,5579]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/checkLootAndWrite (Lnet/minecraft/nbt/NBTTagCompound;)Z[5608,5625]::checkLootAndWrite->func_184282_c
+Rename method net/minecraft/inventory/ItemStackHelper/saveAllItems (Lnet/minecraft/nbt/NBTTagCompound;Lnet/minecraft/util/NonNullList;)Lnet/minecraft/nbt/NBTTagCompound;[5654,5666]::saveAllItems->func_191282_a
+Rename method net/minecraft/tileentity/TileEntity/getUpdatePacket ()Lnet/minecraft/network/play/server/SPacketUpdateTileEntity;[5767,5782]::getUpdatePacket->func_189518_D_
+Rename field net/minecraft/tileentity/TileEntity/pos[5830,5833]::pos->field_174879_c
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[5854,5866]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/getUpdateTag ()Lnet/minecraft/nbt/NBTTagCompound;[5918,5930]::getUpdateTag->func_189517_E_
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[5953,5963]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[6098,6109]::readFromNBT->func_145839_a
+Rename method net/minecraft/network/play/server/SPacketUpdateTileEntity/getNbtCompound ()Lnet/minecraft/nbt/NBTTagCompound;[6116,6130]::getNbtCompound->func_148857_g
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[6216,6227]::readFromNBT->func_145839_a
+Rename method net/minecraft/inventory/IInventory/getInventoryStackLimit ()I[6270,6292]::getInventoryStackLimit->func_70297_j_
+Rename method net/minecraft/world/IInteractionObject/getGuiID ()Ljava/lang/String;[6340,6348]::getGuiID->func_174875_k
+Rename method net/minecraft/world/IInteractionObject/createContainer (Lnet/minecraft/entity/player/InventoryPlayer;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/inventory/Container;[6438,6453]::createContainer->func_174876_a
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/fillWithLoot (Lnet/minecraft/entity/player/EntityPlayer;)V[6519,6531]::fillWithLoot->func_184281_d
+Rename method net/minecraft/tileentity/TileEntityLockableLoot/getItems ()Lnet/minecraft/util/NonNullList;[6664,6672]::getItems->func_190576_q
+Import: soundfont.nep.dungeonsixnine.ElementsDungeon69Mod
+Adding 33 imports
+        java.util.List
+        net.minecraft.block.Block
+        net.minecraft.block.ITileEntityProvider
+        net.minecraft.block.SoundType
+        net.minecraft.block.material.Material
+        net.minecraft.block.state.IBlockState
+        net.minecraft.client.renderer.block.model.ModelResourceLocation
+        net.minecraft.client.util.ITooltipFlag
+        net.minecraft.entity.player.EntityPlayer
+        net.minecraft.entity.player.InventoryPlayer
+        net.minecraft.inventory.Container
+        net.minecraft.inventory.ContainerChest
+        net.minecraft.inventory.ItemStackHelper
+        net.minecraft.item.Item
+        net.minecraft.item.ItemBlock
+        net.minecraft.item.ItemStack
+        net.minecraft.nbt.NBTTagCompound
+        net.minecraft.network.NetworkManager
+        net.minecraft.network.play.server.SPacketUpdateTileEntity
+        net.minecraft.tileentity.TileEntity
+        net.minecraft.tileentity.TileEntityLockableLoot
+        net.minecraft.util.EnumBlockRenderType
+        net.minecraft.util.EnumFacing
+        net.minecraft.util.EnumHand
+        net.minecraft.util.NonNullList
+        net.minecraft.util.math.BlockPos
+        net.minecraft.world.World
+        net.minecraftforge.client.event.ModelRegistryEvent
+        net.minecraftforge.client.model.ModelLoader
+        net.minecraftforge.fml.common.event.FMLInitializationEvent
+        net.minecraftforge.fml.common.registry.GameRegistry
+        net.minecraftforge.fml.relauncher.Side
+        net.minecraftforge.fml.relauncher.SideOnly
+End  Processing: soundfont/nep/dungeonsixnine/block/BlockReloadablecrate.java
+
+Start Processing: soundfont/nep/dungeonsixnine/potion/PotionTimer.java
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class net/minecraftforge/fml/common/registry/GameRegistry
+FOUND CONSTR method soundfont/nep/dungeonsixnine/potion/PotionTimer/PotionTimer (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;)V soundfont/nep/dungeonsixnine/potion/PotionTimer
+FOUND CONSTR method soundfont/nep/dungeonsixnine/potion/PotionTimer/PotionCustom/PotionCustom ()V soundfont/nep/dungeonsixnine/potion/PotionTimer/PotionCustom
+Rename method net/minecraft/potion/Potion/setBeneficial ()Lnet/minecraft/potion/Potion;[1278,1291]::setBeneficial->func_188413_j
+Rename method net/minecraft/potion/Potion/setPotionName (Ljava/lang/String;)Lnet/minecraft/potion/Potion;[1329,1342]::setPotionName->func_76390_b
+Rename method net/minecraft/potion/Potion/isInstant ()Z[1479,1488]::isInstant->func_76403_b
+Rename method net/minecraft/potion/Potion/applyAttributesModifiersToEntity (Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/ai/attributes/AbstractAttributeMap;I)V[1742,1774]::applyAttributesModifiersToEntity->func_111185_a
+Rename field net/minecraft/entity/Entity/world[1860,1865]::world->field_70170_p
+Rename field net/minecraft/entity/Entity/posX[1900,1904]::posX->field_70165_t
+Rename field net/minecraft/entity/Entity/posY[1940,1944]::posY->field_70163_u
+Rename field net/minecraft/entity/Entity/posZ[1980,1984]::posZ->field_70161_v
+Rename field net/minecraft/client/Minecraft/currentScreen[2313,2326]::currentScreen->field_71462_r
+Rename method net/minecraft/client/Minecraft/getTextureManager ()Lnet/minecraft/client/renderer/texture/TextureManager;[2346,2363]::getTextureManager->func_110434_K
+Rename method net/minecraft/client/renderer/texture/TextureManager/bindTexture (Lnet/minecraft/util/ResourceLocation;)V[2362,2373]::bindTexture->func_110577_a
+Rename method net/minecraft/client/gui/Gui/drawModalRectWithCustomSizedTexture (IIFFIIFF)V[2398,2433]::drawModalRectWithCustomSizedTexture->func_146110_a
+Rename method net/minecraft/potion/Potion/isReady (II)Z[2493,2500]::isReady->func_76397_a
+Import: soundfont.nep.dungeonsixnine.procedure.ProcedureApplyTimer
+Import: soundfont.nep.dungeonsixnine.ElementsDungeon69Mod
+Adding 13 imports
+        java.util.HashMap
+        java.util.Map
+        net.minecraft.client.Minecraft
+        net.minecraft.client.gui.Gui
+        net.minecraft.entity.EntityLivingBase
+        net.minecraft.entity.ai.attributes.AbstractAttributeMap
+        net.minecraft.potion.Potion
+        net.minecraft.potion.PotionEffect
+        net.minecraft.util.ResourceLocation
+        net.minecraft.world.World
+        net.minecraftforge.fml.common.registry.GameRegistry
+        net.minecraftforge.fml.relauncher.Side
+        net.minecraftforge.fml.relauncher.SideOnly
+End  Processing: soundfont/nep/dungeonsixnine/potion/PotionTimer.java
+
+Start Processing: soundfont/nep/dungeonsixnine/procedure/ProcedureApplyTimer.java
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+FOUND CONSTR method soundfont/nep/dungeonsixnine/procedure/ProcedureApplyTimer/ProcedureApplyTimer (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;)V soundfont/nep/dungeonsixnine/procedure/ProcedureApplyTimer
+Rename method net/minecraft/nbt/NBTTagCompound/setBoolean (Ljava/lang/String;Z)V[841,851]::setBoolean->func_74757_a
+Rename method net/minecraft/server/MinecraftServer/getPlayerList ()Lnet/minecraft/server/management/PlayerList;[1008,1021]::getPlayerList->func_184103_al
+Rename method net/minecraft/server/management/PlayerList/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[1033,1044]::sendMessage->func_148539_a
+Rename method net/minecraft/nbt/NBTTagCompound/getDouble (Ljava/lang/String;)D[1148,1157]::getDouble->func_74769_h
+Rename method net/minecraft/nbt/NBTTagCompound/getDouble (Ljava/lang/String;)D[1202,1211]::getDouble->func_74769_h
+Rename method net/minecraft/nbt/NBTTagCompound/getDouble (Ljava/lang/String;)D[1354,1363]::getDouble->func_74769_h
+Import: soundfont.nep.dungeonsixnine.ElementsDungeon69Mod
+Adding 5 imports
+        java.util.Map
+        net.minecraft.entity.Entity
+        net.minecraft.server.MinecraftServer
+        net.minecraft.util.text.TextComponentString
+        net.minecraftforge.fml.common.FMLCommonHandler
+End  Processing: soundfont/nep/dungeonsixnine/procedure/ProcedureApplyTimer.java
+
+Start Processing: soundfont/nep/dungeonsixnine/procedure/ProcedureContainerScript.java
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+New Key: class soundfont/nep/dungeonsixnine/ElementsDungeon69Mod
+FOUND CONSTR method soundfont/nep/dungeonsixnine/procedure/ProcedureContainerScript/ProcedureContainerScript (Lsoundfont/nep/dungeonsixnine/ElementsDungeon69Mod;)V soundfont/nep/dungeonsixnine/procedure/ProcedureContainerScript
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[1850,1865]::getDefaultState->func_176223_P
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[1897,1910]::getBlockState->func_180495_p
+New Key: class java/util/Map
+Rename method net/minecraft/block/state/IBlockState/getProperties ()Lcom/google/common/collect/ImmutableMap;[1979,1992]::getProperties->func_177228_b
+Rename method net/minecraft/block/state/IBlockState/getPropertyKeys ()Ljava/util/Collection;[2067,2082]::getPropertyKeys->func_177227_a
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[2121,2133]::withProperty->func_177226_a
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[2196,2209]::setBlockState->func_180501_a
+Rename field net/minecraft/world/World/isRemote[2245,2253]::isRemote->field_72995_K
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[2359,2372]::getTileEntity->func_175625_s
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[2408,2421]::getBlockState->func_180495_p
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[2490,2499]::setString->func_74778_a
+Rename method net/minecraft/world/World/notifyBlockUpdate (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/block/state/IBlockState;I)V[2552,2569]::notifyBlockUpdate->func_184138_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[2742,2757]::getDefaultState->func_176223_P
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[2789,2802]::getBlockState->func_180495_p
+New Key: class java/util/Map
+Rename method net/minecraft/block/state/IBlockState/getProperties ()Lcom/google/common/collect/ImmutableMap;[2871,2884]::getProperties->func_177228_b
+Rename method net/minecraft/block/state/IBlockState/getPropertyKeys ()Ljava/util/Collection;[2959,2974]::getPropertyKeys->func_177227_a
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[3013,3025]::withProperty->func_177226_a
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[3088,3101]::setBlockState->func_180501_a
+Rename field net/minecraft/world/World/isRemote[3137,3145]::isRemote->field_72995_K
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[3251,3264]::getTileEntity->func_175625_s
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[3300,3313]::getBlockState->func_180495_p
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[3382,3391]::setString->func_74778_a
+Rename method net/minecraft/world/World/notifyBlockUpdate (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/block/state/IBlockState;I)V[3443,3460]::notifyBlockUpdate->func_184138_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[3630,3645]::getDefaultState->func_176223_P
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[3677,3690]::getBlockState->func_180495_p
+New Key: class java/util/Map
+Rename method net/minecraft/block/state/IBlockState/getProperties ()Lcom/google/common/collect/ImmutableMap;[3759,3772]::getProperties->func_177228_b
+Rename method net/minecraft/block/state/IBlockState/getPropertyKeys ()Ljava/util/Collection;[3847,3862]::getPropertyKeys->func_177227_a
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[3901,3913]::withProperty->func_177226_a
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[3976,3989]::setBlockState->func_180501_a
+Rename field net/minecraft/world/World/isRemote[4025,4033]::isRemote->field_72995_K
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[4139,4152]::getTileEntity->func_175625_s
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4188,4201]::getBlockState->func_180495_p
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[4270,4279]::setString->func_74778_a
+Rename method net/minecraft/world/World/notifyBlockUpdate (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/block/state/IBlockState;I)V[4334,4351]::notifyBlockUpdate->func_184138_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[4529,4544]::getDefaultState->func_176223_P
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[4576,4589]::getBlockState->func_180495_p
+New Key: class java/util/Map
+Rename method net/minecraft/block/state/IBlockState/getProperties ()Lcom/google/common/collect/ImmutableMap;[4658,4671]::getProperties->func_177228_b
+Rename method net/minecraft/block/state/IBlockState/getPropertyKeys ()Ljava/util/Collection;[4746,4761]::getPropertyKeys->func_177227_a
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[4800,4812]::withProperty->func_177226_a
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[4875,4888]::setBlockState->func_180501_a
+Rename field net/minecraft/world/World/isRemote[4924,4932]::isRemote->field_72995_K
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[5038,5051]::getTileEntity->func_175625_s
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[5087,5100]::getBlockState->func_180495_p
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[5169,5178]::setString->func_74778_a
+Rename method net/minecraft/world/World/notifyBlockUpdate (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/block/state/IBlockState;I)V[5231,5248]::notifyBlockUpdate->func_184138_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[5399,5414]::getDefaultState->func_176223_P
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[5446,5459]::getBlockState->func_180495_p
+New Key: class java/util/Map
+Rename method net/minecraft/block/state/IBlockState/getProperties ()Lcom/google/common/collect/ImmutableMap;[5528,5541]::getProperties->func_177228_b
+Rename method net/minecraft/block/state/IBlockState/getPropertyKeys ()Ljava/util/Collection;[5616,5631]::getPropertyKeys->func_177227_a
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[5670,5682]::withProperty->func_177226_a
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[5745,5758]::setBlockState->func_180501_a
+Rename field net/minecraft/world/World/isRemote[5794,5802]::isRemote->field_72995_K
+Rename method net/minecraft/world/IBlockAccess/getTileEntity (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/tileentity/TileEntity;[5908,5921]::getTileEntity->func_175625_s
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[5957,5970]::getBlockState->func_180495_p
+Rename method net/minecraft/nbt/NBTTagCompound/setString (Ljava/lang/String;Ljava/lang/String;)V[6039,6048]::setString->func_74778_a
+Rename method net/minecraft/world/World/notifyBlockUpdate (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/block/state/IBlockState;I)V[6100,6117]::notifyBlockUpdate->func_184138_a
+Import: soundfont.nep.dungeonsixnine.block.BlockReloadablecrate
+Import: soundfont.nep.dungeonsixnine.block.BlockReloadTank
+Import: soundfont.nep.dungeonsixnine.block.BlockReloadMetal
+Import: soundfont.nep.dungeonsixnine.block.BlockBattery
+Import: soundfont.nep.dungeonsixnine.block.BlockAlienContainer
+Import: soundfont.nep.dungeonsixnine.ElementsDungeon69Mod
+Adding 6 imports
+        java.util.Map
+        net.minecraft.block.properties.IProperty
+        net.minecraft.block.state.IBlockState
+        net.minecraft.tileentity.TileEntity
+        net.minecraft.util.math.BlockPos
+        net.minecraft.world.World
+End  Processing: soundfont/nep/dungeonsixnine/procedure/ProcedureContainerScript.java
+

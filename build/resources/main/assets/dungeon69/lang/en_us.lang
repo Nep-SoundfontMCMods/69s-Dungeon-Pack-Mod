@@ -1,0 +1,10 @@
+tile.battery.name=Battery
+tile.alien_container.name=Alien Container
+potion.effect.timer=Borrowed time
+tile.crate_randomizer.name=Spawn Container
+tipped_arrow.effect.timer=Arrow of 
+tile.reloadablecrate.name=Wooden Crate 
+tile.reload_metal.name=Metal Crate
+effect.timer=Timer
+chat.crateretrieveerror=Could not retrieve item: Container is empty.
+tile.reload_tank.name=Reloading Tank

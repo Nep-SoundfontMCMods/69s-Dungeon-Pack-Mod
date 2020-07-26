@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "dungeon69",
+    "name": "69's dungeon pack mod",
+    "description": "Adds mapmaking toolsets for maps with self-replenishing loot",
+    "version": "Alpha-0.0.1",
+    "credits": "Made in MCreator and proudly used on OurHealer's Modded server!",
+    "logoFile": "",
+    "mcversion": "1.12.2",
+    "url": "https://mcreator.net",
+    "updateUrl": "",
+    "authorList": [
+      "The_69_Days_ConSequence (Nep Soundfont)"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "requiredMods": [],
+    "useDependencyInformation": "true"
+  }
+]

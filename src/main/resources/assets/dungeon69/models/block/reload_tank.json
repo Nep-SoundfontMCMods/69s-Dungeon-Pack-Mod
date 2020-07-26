@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dungeon69:blocks/tank",
+    "up": "dungeon69:blocks/tank",
+    "north": "dungeon69:blocks/tank",
+    "east": "dungeon69:blocks/tank",
+    "south": "dungeon69:blocks/tank",
+    "west": "dungeon69:blocks/tank",
+    "particle": "dungeon69:blocks/tank"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dungeon69:blocks/metalcrate",
+    "up": "dungeon69:blocks/battop",
+    "north": "dungeon69:blocks/metalcrate",
+    "east": "dungeon69:blocks/metalcrate",
+    "south": "dungeon69:blocks/metalcrate",
+    "west": "dungeon69:blocks/metalcrate",
+    "particle": "dungeon69:blocks/metalcrate"
+  }
+}
