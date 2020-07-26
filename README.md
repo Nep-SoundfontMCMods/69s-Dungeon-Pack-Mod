@@ -14,4 +14,6 @@
  the IDs need to be added to each world in (save)/data/loot_tables/dungeonsixnine/(paste loot tables here)
  you can make custom loot tables at https://minecraft.tools 
  loot tables are: wood, metal, tank, battery and alien
-# 
+# Time trial tools (NYI)
+# Sounds (Semi-Implemented)
+ literally just extra sounds for use with a command/block
