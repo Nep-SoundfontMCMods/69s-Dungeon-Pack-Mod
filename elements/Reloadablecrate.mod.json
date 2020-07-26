@@ -24,9 +24,9 @@
     "Mz": 1.0,
     "name": "Wooden Crate ",
     "specialInfo": [
-      "Reloads on a loot table",
-      "creative only block that reloads with /reload crate or /reload all",
-      "holds 3 Loot items and no fluid or energy."
+      "3 items",
+      "No fluid",
+      "No energy"
     ],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -76,7 +76,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "Woodcrategui",
     "openGUIOnRightClick": true,
     "inventorySize": 3,
     "inventoryStackSize": 64,

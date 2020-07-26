@@ -1,7 +1,9 @@
 
 package soundfont.nep.dungeonsixnine.block;
 
+import soundfont.nep.dungeonsixnine.gui.GuiWoodcrategui;
 import soundfont.nep.dungeonsixnine.ElementsDungeon69Mod;
+import soundfont.nep.dungeonsixnine.Dungeon69Mod;
 
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
@@ -25,7 +27,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.inventory.ContainerChest;
 import net.minecraft.inventory.Container;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.entity.player.EntityPlayer;
@@ -80,9 +81,9 @@ public class BlockReloadablecrate extends ElementsDungeon69Mod.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add("Reloads on a loot table");
-			list.add("creative only block that reloads with /reload crate or /reload all");
-			list.add("holds 3 Loot items and no fluid or energy.");
+			list.add("3 items");
+			list.add("No fluid");
+			list.add("No energy");
 		}
 
 		@Override
@@ -109,6 +110,9 @@ public class BlockReloadablecrate extends ElementsDungeon69Mod.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
+			if (entity instanceof EntityPlayer) {
+				((EntityPlayer) entity).openGui(Dungeon69Mod.instance, GuiWoodcrategui.GUIID, world, x, y, z);
+			}
 			return true;
 		}
 	}
@@ -197,8 +201,7 @@ public class BlockReloadablecrate extends ElementsDungeon69Mod.ModElement {
 
 		@Override
 		public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-			this.fillWithLoot(playerIn);
-			return new ContainerChest(playerInventory, this, playerIn);
+			return new GuiWoodcrategui.GuiContainerMod(this.getWorld(), this.getPos().getX(), this.getPos().getY(), this.getPos().getZ(), playerIn);
 		}
 
 		@Override

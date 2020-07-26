@@ -14,6 +14,8 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.tileentity.TileEntity;
@@ -24,12 +26,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ContainerChest;
 import net.minecraft.inventory.Container;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.Minecraft;
@@ -70,22 +70,21 @@ public class BlockReloadTank extends ElementsDungeon69Mod.ModElement {
 		public BlockCustom() {
 			super(Material.IRON);
 			setUnlocalizedName("reload_tank");
-			setSoundType(SoundType.METAL);
+			setSoundType(SoundType.GLASS);
 			setHardness(1F);
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+			setCreativeTab(null);
 			setBlockUnbreakable();
 		}
 
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add("Stores the most fluid");
-			list.add("6 items");
+			list.add("2 items");
+			list.add("100 Buckets");
 			list.add("No energy");
-			list.add("100 Buckets (1 million mB)");
 		}
 
 		@Override
@@ -108,15 +107,6 @@ public class BlockReloadTank extends ElementsDungeon69Mod.ModElement {
 		@Override
 		public EnumBlockRenderType getRenderType(IBlockState state) {
 			return EnumBlockRenderType.MODEL;
-		}
-
-		@Override
-		public void breakBlock(World world, BlockPos pos, IBlockState state) {
-			TileEntity tileentity = world.getTileEntity(pos);
-			if (tileentity instanceof TileEntityCustom)
-				InventoryHelper.dropInventoryItems(world, pos, (TileEntityCustom) tileentity);
-			world.removeTileEntity(pos);
-			super.breakBlock(world, pos, state);
 		}
 
 		@Override
@@ -156,13 +146,23 @@ public class BlockReloadTank extends ElementsDungeon69Mod.ModElement {
 					world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, d0, d1, d2, d3, d4, d5);
 				}
 		}
+
+		@Override
+		public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer entity, EnumHand hand, EnumFacing direction,
+				float hitX, float hitY, float hitZ) {
+			super.onBlockActivated(world, pos, state, entity, hand, direction, hitX, hitY, hitZ);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return true;
+		}
 	}
 
 	public static class TileEntityCustom extends TileEntityLockableLoot {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(2, ItemStack.EMPTY);
 		@Override
 		public int getSizeInventory() {
-			return 9;
+			return 2;
 		}
 
 		@Override

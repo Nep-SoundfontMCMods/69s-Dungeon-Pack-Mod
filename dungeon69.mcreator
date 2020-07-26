@@ -1,6 +1,6 @@
 {
   "id_map": {
-    "GUI": 1
+    "GUI": 2
   },
   "mod_elements": [
     {
@@ -111,6 +111,17 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "timer"
+    },
+    {
+      "name": "Woodcrategui",
+      "type": "gui",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 2
+      },
+      "registry_name": "woodcrategui"
     }
   ],
   "variable_elements": [],
@@ -137,7 +148,7 @@
       "tile.reload_metal.name": "Metal Crate",
       "effect.timer": "Timer",
       "chat.crateretrieveerror": "Could not retrieve item: Container is empty.",
-      "tile.reload_tank.name": "Reloading Tank"
+      "tile.reload_tank.name": "Glass Tank"
     }
   },
   "workspaceSettings": {

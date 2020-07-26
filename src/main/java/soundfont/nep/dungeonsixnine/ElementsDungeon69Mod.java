@@ -6,6 +6,8 @@
  */
 package soundfont.nep.dungeonsixnine;
 
+import soundfont.nep.dungeonsixnine.gui.GuiWoodcrategui;
+
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
@@ -124,11 +126,15 @@ public class ElementsDungeon69Mod implements IFuelHandler, IWorldGenerator {
 	public static class GuiHandler implements IGuiHandler {
 		@Override
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiWoodcrategui.GUIID)
+				return new GuiWoodcrategui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
 		@Override
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiWoodcrategui.GUIID)
+				return new GuiWoodcrategui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

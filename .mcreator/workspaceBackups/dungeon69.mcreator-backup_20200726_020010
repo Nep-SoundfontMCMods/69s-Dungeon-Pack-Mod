@@ -1,0 +1,173 @@
+{
+  "id_map": {
+    "GUI": 2
+  },
+  "mod_elements": [
+    {
+      "name": "Reloadablecrate",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reloadablecrate"
+    },
+    {
+      "name": "ContainerScript",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "container_script",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReloadTank",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reload_tank"
+    },
+    {
+      "name": "CrateRandomizer",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crate_randomizer"
+    },
+    {
+      "name": "ReloadMetal",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reload_metal"
+    },
+    {
+      "name": "Battery",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery"
+    },
+    {
+      "name": "AlienContainer",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alien_container"
+    },
+    {
+      "name": "ApplyTimer",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apply_timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Timer",
+      "type": "potion",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "timer"
+    },
+    {
+      "name": "Woodcrategui",
+      "type": "gui",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 2
+      },
+      "registry_name": "woodcrategui"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "ambient1",
+      "file": "just_monika",
+      "category": "ambient"
+    },
+    {
+      "name": "ambient2",
+      "file": "just_monika",
+      "category": "ambient"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "tile.battery.name": "Battery",
+      "tile.alien_container.name": "Alien Container",
+      "potion.effect.timer": "Borrowed time",
+      "tile.crate_randomizer.name": "Spawn Container",
+      "tipped_arrow.effect.timer": "Arrow of ",
+      "tile.reloadablecrate.name": "Wooden Crate ",
+      "tile.reload_metal.name": "Metal Crate",
+      "effect.timer": "Timer",
+      "chat.crateretrieveerror": "Could not retrieve item: Container is empty.",
+      "tile.reload_tank.name": "Glass Tank"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "dungeon69",
+    "modName": "69\u0027s dungeon pack mod",
+    "version": "Alpha-0.0.1",
+    "description": "Adds mapmaking toolsets for maps with self-replenishing loot",
+    "author": "The_69_Days_ConSequence (Nep Soundfont)",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.12.2",
+    "credits": "Made in MCreator and proudly used on OurHealer\u0027s Modded server!",
+    "modElementsPackage": "soundfont.nep.dungeonsixnine",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000430417
+}

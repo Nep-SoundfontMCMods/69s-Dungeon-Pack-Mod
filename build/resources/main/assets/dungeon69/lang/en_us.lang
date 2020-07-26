@@ -7,4 +7,4 @@ tile.reloadablecrate.name=Wooden Crate
 tile.reload_metal.name=Metal Crate
 effect.timer=Timer
 chat.crateretrieveerror=Could not retrieve item: Container is empty.
-tile.reload_tank.name=Reloading Tank
+tile.reload_tank.name=Glass Tank

@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "itemTexture": "",
     "hasTransparency": true,
-    "connectedSides": false,
+    "connectedSides": true,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
@@ -22,18 +22,17 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Reloading Tank",
+    "name": "Glass Tank",
     "specialInfo": [
-      "Stores the most fluid",
-      "6 items",
-      "No energy",
-      "100 Buckets (1 million mB)"
+      "2 items",
+      "100 Buckets",
+      "No energy"
     ],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -64,7 +63,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "GLASS"
     },
     "luminance": 0.0,
     "unbreakable": true,
@@ -78,10 +77,10 @@
     "particleAmount": 4,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "openGUIOnRightClick": true,
+    "inventorySize": 2,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
+    "inventoryDropWhenDestroyed": false,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
